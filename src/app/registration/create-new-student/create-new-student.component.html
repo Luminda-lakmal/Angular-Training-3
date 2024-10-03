@@ -1,0 +1,15 @@
+<h2>Create new student</h2>
+<form [formGroup]="userForm" (ngSubmit)="submit()">
+
+    <label>First name</label><br>
+    <input type="text" formControlName="name"><br><br>
+    
+    
+    <label>Age</label><br>
+    <input type="number" formControlName="age"><br><br>
+
+    <label>Email</label><br>
+    <input type="text" formControlName="email"><br><br>
+
+    <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form><br><br>
